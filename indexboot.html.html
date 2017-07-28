@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html>
+  <head lang="en">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-Edge">
+    <meta name="viewport" content="width=device-width, initial-scale-1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Pacifico">
+    <title>Bootstrap Project 1</title>
+  </head>
+
+  <style media="screen">
+    .jumbotron {
+      background-color: #2E2D88;
+      color: white;
+      padding-top: 30px;
+      padding-bottom: 30px;
+      margin-bottom: 30px;
+    }
+    /*-------------Adds Borders for Tabs-----------------*/
+    .tab-content {
+      border-left: 1px solid #ddd;
+      border-right: 1px solid #ddd;
+      border-bottom: 1px solid #ddd;
+      padding: 10px;
+    }
+    .nav-tabs {
+      margin-bottom: 0;
+    }
+    #nttLogo {
+      height: 100px;
+      width: 100px;
+    }
+    #websiteTitle {
+      font-size: 5em;
+      vertical-align: middle;
+      font-family: "Pacifico", cursive;
+      padding-left: 15px;
+      color: #191970;
+    }
+    #websiteSlogan {
+      font-size: 5em;
+    }
+    /*--------------Carousel-Styling-------------*/
+    .slide1 {
+      background-image: url("https://static.pexels.com/photos/132037/pexels-photo-132037.jpeg");
+      height: 500px;
+      background-position: center;
+      background-size: cover;
+    }
+    .slide2 {
+      background-image: url("https://newevolutiondesigns.com/images/freebies/nature-hd-background-10.jpg");
+      height: 500px;
+      background-position: center;
+      background-size: cover;
+    }
+    .slide3 {
+      background-image: url("http://wallpaper-gallery.net/images/hd-nature-background-wallpaper/hd-nature-background-wallpaper-22.jpg");
+      height: 500px;
+      background-position: center;
+      background-size: cover;
+    }
+    .carousel-action h1 {
+      font-size: 5.4em;
+      font-family: "Pacifico", cursive;
+      padding-bottom: .4em;
+    }
+    .carousel-action {
+      font-size: 2em;
+    }
+  </style>
+
+  <body>
+    <div class="container">
+      <div class="navbar navbar-default">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a href="#" class="navbar-brand">Logo</a>
+          </div>
+
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Contact <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Email</a></li>
+                <li><a href="#">Phone</a></li>
+                <li><a href="#">Make Appointment</a></li>
+              </ul>
+            </li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">More Info</a></li>
+          </ul>
+
+          <form class="navbar-form navbar-right" action="index.html" method="post">
+            <button type="submit" name="button" class="btn btn-default">Search</button>
+            <div class="form-group">
+              <input type="text" name="" value="" class="form-control" placeholder="Search">
+            </div>
+          </form>
+
+        </div>
+      </div>
+    </div>
+
+    <div id="theCarousel" class="carousel slide" data-ride="carousel">
+
+      <ol class="carousel-indicators">
+        <li data-target="#theCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#theCarousel" data-slide-to="1"></li>
+        <li data-target="#theCarousel" data-slide-to="2"></li>
+      </ol>
+
+      <div class="carousel-inner">
+        <div class="item active">
+          <div class="slide1"></div>
+          <div class="carousel-caption">
+            <h1>Welcome To Our Site</h1>
+            <a href="#" class="btn btn-warning">Enter Here</a>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="slide2"></div>
+          <div class="carousel-caption">
+            <h1>Amazing Content</h1>
+            <p>Explore Our Selections Here</p>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="slide3"></div>
+          <div class="carousel-caption">
+            <h1>More Items</h1>
+            <p>If You Could Not Find Your Design, We Can Customize!!</p>
+          </div>
+        </div>
+      </div>
+
+      <a href="#theCarousel" class="right carousel-control" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span></a>
+
+      <a href="#theCarousel" class="left carousel-control" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span></a>
+    </div> <br>
+
+    <div class="container">
+      <div class="row">
+
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+          <table class="table table-bordered table-striped table-hover">
+            <thead>
+              <tr>
+                <th colspan="5" class="text-center">Best Baseball Players</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="col-md-2"></th>
+                <th class="text-center">Batting Average</th>
+                <th class="text-center">RBI</th>
+                <th class="text-center">Homeruns</th>
+                <th class="text-center">Best Baseball Player?</th>
+              </tr>
+              <tr>
+                <td>Alex Rios</td>
+                <td>.277</td>
+                <td>794</td>
+                <td>169</td>
+                <td>Maybe</td>
+              </tr>
+              <tr>
+                <td>Derek Jeter</td>
+                <td>.310</td>
+                <td>1311</td>
+                <td>260</td>
+                <td>Yes</td>
+              </tr>
+              <tr>
+                <td>Babe Ruth</td>
+                <td>.342</td>
+                <td>2214</td>
+                <td>714</td>
+                <td>Yes</td>
+              </tr>
+              <tr>
+                <td>Jackie Robinson</td>
+                <td>.311</td>
+                <td>734</td>
+                <td>137</td>
+                <td>Yes</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+          <h2>Text</h2>
+          <div class="">
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+          <h1><a href="#col1" data-toggle="collapse">Column 1</a></h1>
+          <div id="col1" class="collapse in">
+            "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat."
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-lg-offset-4 col-md-6 col-md-offset-6 col-sm-4 col-offset-4 col-xs-12 col-xs-offset-12">
+          <h1><a href="#col2" data-toggle="collapse">Column 2</a></h1>
+          <div id="col2" class="collapse in">
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+          </div>
+        </div>
+      </div>
+    </div> <br>
+
+    <div class="container">
+      <div class="media-left media-top">
+        <img src="https://wtw-production.s3.amazonaws.com/app1/users/avatars/000/003/929/a227cc5298063304288d8649bf64386fb2ee6d22/thumb/funny-monkey-1.jpg?1452741876" alt="" class="media-object">
+      </div>
+      <div class="media-body">
+        <h4 class="media-heading">Text</h4>
+        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+      </div>
+    </div> <br>
+
+    <div class="container">
+      <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+
+        <div class="thumbnail">
+          <img src="http://www.salvationarmychilliwack.ca/wordpress/files/2015/04/nexusae0_twitter-thumb1.png" alt="">
+          <div class="caption">
+            <h3>Heading</h3>
+            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat."</p>
+          </div>
+          <p><a href="#" class="btn btn-primary" role="button">Add To Cart</a></p>
+        </div>
+      </div>
+
+      <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+        <div class="dropdown">
+          <button class="btn btn-warning data-toggle" type="button" name="button" data-toggle="dropdown">Contact Us
+            <span class="caret"></span></button>
+          <ul class="dropdown-menu">
+            <li class="dropdown-header">Ways to Contact Us</li>
+            <li><a href="#">Phone</a></li>
+            <li><a href="#">Email</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Make an Appointment</a></li>
+          </ul>
+        </div>
+      </div>
+
+    </div> <br>
+
+    <div class="container">
+      <div class="row">
+
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+          <div class="dropdown">
+            <button class="btn btn-success dropdown-toggle"type="button" name="button" data-toggle="dropdown">
+            My Favorite Superheroes <span class="caret"></span></button>
+            <ul class="dropdown-menu">
+              <li class="dropdown-header">Male Heroes</li>
+              <li><a href="#">Batman</a></li>
+              <li><a href="#">Superman</a></li>
+              <li><a href="#">Flash</a></li>
+              <li><a href="#">Iron Man</a></li>
+
+              <li role="separator" class="divider"></li>
+              <li class="dropdown-header">Female Heroes</li>
+              <li><a href="#">Wonderwoman</a></li>
+              <li><a href="#">Elektra</a></li>
+              <li><a href="#">Superwoman</a></li>
+              <li><a href="#">BatGirl</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+          <div class="dropdown">
+            <button class="btn btn-info data-toggle" type="button" name="button" data-toggle="dropdown">Contact Us
+              <span class="caret"></span></button>
+            <ul class="dropdown-menu">
+              <li class="dropdown-header">Ways to Contact Us</li>
+              <li><a href="#">Phone</a></li>
+              <li><a href="#">Email</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#">Make an Appointment</a></li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div> <br>
+
+    <div class="container">
+
+      <ul class="nav nav-tabs">
+        <li class="active"><a href="#superman" data-toggle="tab">Superman</a></li>
+        <li><a href="#batman" data-toggle="tab">Batman</a></li>
+        <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Flash <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a data-toggle="tab" href="#kidflash">Kid Flash</a></li>
+            <li><a data-toggle="tab" href="#flash">The Flash</a></li>
+          </ul>
+        </li>
+      </ul>
+
+      <div class="tab-content">
+        <div  id="superman" class="tab-pane fade in active">
+          <p>Superman is a fictional character of DC Comics</p>
+        </div>
+        <div id="batman" class="tab-pane fade">
+          <p>Batman is a fictional charactoer of DC Comics</p>
+        </div>
+        <div id="kidflash" class="tab-pane fade">
+          <p>Kid Flash is the younger version of Flash. He is a fictional character of DC Comics</p>
+        </div>
+        <div id="flash" class="tab-pane fade">
+          <p>The Flash is a fictional character of DC Comics</p>
+        </div>
+      </div>
+
+    </div> <br>
+
+    <div class="container">
+    	<div class="input-group input-group-lg">
+    		<span class="input-group-addon">Your Name</span>
+    		<input type="text" class="form-control" placeholder= "Full Name">
+    	</div> <br>
+
+    	<div class="input-group input-group-sm">
+    		<input type="text" class="form-control" placeholder= "Full Name">
+    		<span class="input-group-btn">
+    			<button class="btn btn-default">Enter</button>
+    		</span>
+    	</div>
+    </div><br>
+
+    <div class="container">
+    	<div class="row">
+    		<div class="input-group">
+    			<div class="input-group-btn">
+    				<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">User ID <span class="caret"></span></button>
+    				<ul class="dropdown-menu">
+    					<li><a href="#">Facebook</a></li>
+    					<li><a href="#">Twitter</a></li>
+    					<li><a href="#">Google+</a></li>
+    				</ul>
+    			</div>
+    			<input type="text" name="" class="form-control" aria-label="...">
+    		</div>
+    	</div>
+
+    </div><br>
+
+    <div class="container">
+      <div class="text-center">
+        <ul class="pagination pagination-lg">
+          <li><a href="#" aria-label= "Previous"><span>&laquo;</span></a></li>
+          <li><a href="#">1</a></li>
+          <li><a href="#">2</a></li>
+          <li><a href="#">3</a></li>
+          <li><a href="#">4</a></li>
+          <li><a href="#">5</a></li>
+          <li><a href="#">6</a></li>
+          <li><a href="#" aria-label="Next"><span>&raquo;</span></a></li>
+        </ul>
+      </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
+    </script>
+  </body>
+</html>
